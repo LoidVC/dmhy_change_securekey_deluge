@@ -5,12 +5,12 @@ import time
 # ****************
 # CHANGE INFO BELOW
 # ****************
-__APIURL__ = "" # Get Yours From https://u2.dmhy.org/privatetorrents.php
-__DE_URL__ = ""
-__DE_PORT__ = 11111 # Number not string, it's NOT your WEBUI port, get this from WEBUI Connection Manager
-__DE_USER__ = ""
-__DE_PW__ = ""
-
+__APIURL__ = input("输入API地址（站内查看）：")
+__DE_URL__ = input("输入客户端IP（http://IP）：")
+__DE_PORT__ = input("输入客户端后端端口（非WebUI端口）：")
+__DE_PORT__ = int(__DE_PORT__)
+__DE_USER__ = input("输入客户端用户名：")
+__DE_PW__ = input("输入客户端密码：")
 
 count = 0
 
